@@ -1,0 +1,54 @@
+#!/bin/bash
+
+rm -f \
+    20180519_NJLs8uI7fg8.info.json.vo.* \
+    20180519_NJLs8uI7fg8.info.json.ao.* \
+    20180519_NJLs8uI7fg8.info.json.bo.* \
+    20180519_NJLs8uI7fg8.info.json.wav 
+
+rm -fr               20180519_NJLs8uI7fg8.info_dir
+mkdir -p             20180519_NJLs8uI7fg8.info_dir
+mv 20180519_NJLs8uI7fg8.info.json 20180519_NJLs8uI7fg8.info.json.*         20180519_NJLs8uI7fg8.info_dir/
+
+
+
+mv  20180519_NJLs8uI7fg8.info_dir/20180519_NJLs8uI7fg8.info.json.jpg 20180519_NJLs8uI7fg8.info_dir/20180519_NJLs8uI7fg8.info.json.webm.mp4.jpg
+
+cat > 20180519_NJLs8uI7fg8.info_dir/_index.md << EOF3
++++
+title = " 20180519_NJLs8uI7fg8 VOA专家视点：川普有意救中兴 释放善意还是烟雾弹？2018-05-18 "
+description = " 主持人：乔栈  嘉宾：秦伟平 陈朝晖  由中国国务院副总理刘鹤率领的中方代表团周五继续与美方经贸官员进行磋商，此次谈判有何进展？美中双方是否仍在“各说各话”？此外川普总统在不久前在推特上发文，表示有意给受禁令影响的中国中兴通讯公司“松绑”，这是为了美中经贸磋商释放善意还是向中方投掷了一枚烟雾弹？我们今天就有关话题邀请到两位嘉宾与我们一同探讨。 "
+weight = 20
++++
+
+{{< mymp4 mp4="20180519_NJLs8uI7fg8.info.json.webm.mp4" 
+text="len $(cat 20180519_NJLs8uI7fg8.info_dir/20180519_NJLs8uI7fg8.info.json.webm.mp4|wc -c)"
+>}}
+
+{{< mymp4x  mp4x="20180519_NJLs8uI7fg8.info.json.25k.mp4"
+text="len $(cat 20180519_NJLs8uI7fg8.info_dir/20180519_NJLs8uI7fg8.info.json.25k.mp4|wc -c)"
+>}}
+
+
+{{< mydiv text="主持人：乔栈  嘉宾：秦伟平 陈朝晖  由中国国务院副总理刘鹤率领的中方代表团周五继续与美方经贸官员进行磋商，此次谈判有何进展？美中双方是否仍在“各说各话”？此外川普总统在不久前在推特上发文，表示有意给受禁令影响的中国中兴通讯公司“松绑”，这是为了美中经贸磋商释放善意还是向中方投掷了一枚烟雾弹？我们今天就有关话题邀请到两位嘉宾与我们一同探讨。" >}}
+<br>
+
+{{< mydiv text="https://www.youtube.com/watch?v=NJLs8uI7fg8" >}}
+
+
+<br>
+
+请大家传播时，不需要传播文件本身，<br>
+原因是：一旦传播过大东西（例如，图片，文件），<br>
+就会触发检查机制。<br>
+我不知道检查机制的触发条件。<br>
+但是我知道，不会说你传一个没有敏感词的网络地址都检查，<br>
+否则，检查员得累死。<br><br>
+直接转发网址就可以了：<br>
+原因是，这是程序员网站，<br>
+共匪不敢封锁，墙内可以直接下载。
+
+
+EOF3
+
+

@@ -1,0 +1,54 @@
+#!/bin/bash
+
+rm -f \
+    20180507_pDgA6MAdMWU.info.json.vo.* \
+    20180507_pDgA6MAdMWU.info.json.ao.* \
+    20180507_pDgA6MAdMWU.info.json.bo.* \
+    20180507_pDgA6MAdMWU.info.json.wav 
+
+rm -fr               20180507_pDgA6MAdMWU.info_dir
+mkdir -p             20180507_pDgA6MAdMWU.info_dir
+mv 20180507_pDgA6MAdMWU.info.json 20180507_pDgA6MAdMWU.info.json.*         20180507_pDgA6MAdMWU.info_dir/
+
+
+
+mv  20180507_pDgA6MAdMWU.info_dir/20180507_pDgA6MAdMWU.info.json.jpg 20180507_pDgA6MAdMWU.info_dir/20180507_pDgA6MAdMWU.info.json.webm.mp4.jpg
+
+cat > 20180507_pDgA6MAdMWU.info_dir/_index.md << EOF3
++++
+title = " 20180507_pDgA6MAdMWU VOA专家视点: 美中贸易磋商收效几何？2018-05-04 "
+description = " 由美国财政部长努钦率领的美国贸易代表团周五结束了与中国的经贸磋商。中国官方媒体新华社发文称，会谈“坦诚、高效、富有建设性”。报道称美中双方在“有些领域”取得共识，但在其它一些问题上仍存在“较大分歧”。美中此次经贸磋商收效几何？是否是姿态大于实际作用？在美中谈判的进程中，美国的底线可能是什么 ？我们今天就有关话题邀请嘉宾参与节目讨论。一位是做客演播室的旅美经济学者秦伟平，另一位是通过Skype视频连线加入我们节目的美国绮色佳大学政治学教授王维正。 "
+weight = 20
++++
+
+{{< mymp4 mp4="20180507_pDgA6MAdMWU.info.json.webm.mp4" 
+text="len $(cat 20180507_pDgA6MAdMWU.info_dir/20180507_pDgA6MAdMWU.info.json.webm.mp4|wc -c)"
+>}}
+
+{{< mymp4x  mp4x="20180507_pDgA6MAdMWU.info.json.25k.mp4"
+text="len $(cat 20180507_pDgA6MAdMWU.info_dir/20180507_pDgA6MAdMWU.info.json.25k.mp4|wc -c)"
+>}}
+
+
+{{< mydiv text="由美国财政部长努钦率领的美国贸易代表团周五结束了与中国的经贸磋商。中国官方媒体新华社发文称，会谈“坦诚、高效、富有建设性”。报道称美中双方在“有些领域”取得共识，但在其它一些问题上仍存在“较大分歧”。美中此次经贸磋商收效几何？是否是姿态大于实际作用？在美中谈判的进程中，美国的底线可能是什么 ？我们今天就有关话题邀请嘉宾参与节目讨论。一位是做客演播室的旅美经济学者秦伟平，另一位是通过Skype视频连线加入我们节目的美国绮色佳大学政治学教授王维正。" >}}
+<br>
+
+{{< mydiv text="https://www.youtube.com/watch?v=pDgA6MAdMWU" >}}
+
+
+<br>
+
+请大家传播时，不需要传播文件本身，<br>
+原因是：一旦传播过大东西（例如，图片，文件），<br>
+就会触发检查机制。<br>
+我不知道检查机制的触发条件。<br>
+但是我知道，不会说你传一个没有敏感词的网络地址都检查，<br>
+否则，检查员得累死。<br><br>
+直接转发网址就可以了：<br>
+原因是，这是程序员网站，<br>
+共匪不敢封锁，墙内可以直接下载。
+
+
+EOF3
+
+

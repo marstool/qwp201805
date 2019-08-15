@@ -1,0 +1,54 @@
+#!/bin/bash
+
+rm -f \
+    20180402_cIVKG1E2pzY.info.json.vo.* \
+    20180402_cIVKG1E2pzY.info.json.ao.* \
+    20180402_cIVKG1E2pzY.info.json.bo.* \
+    20180402_cIVKG1E2pzY.info.json.wav 
+
+rm -fr               20180402_cIVKG1E2pzY.info_dir
+mkdir -p             20180402_cIVKG1E2pzY.info_dir
+mv 20180402_cIVKG1E2pzY.info.json 20180402_cIVKG1E2pzY.info.json.*         20180402_cIVKG1E2pzY.info_dir/
+
+
+
+mv  20180402_cIVKG1E2pzY.info_dir/20180402_cIVKG1E2pzY.info.json.jpg 20180402_cIVKG1E2pzY.info_dir/20180402_cIVKG1E2pzY.info.json.webm.mp4.jpg
+
+cat > 20180402_cIVKG1E2pzY.info_dir/_index.md << EOF3
++++
+title = " 20180402_cIVKG1E2pzY VOA焦点对话 | 邓家外戚 “知罪”，体制陷阱延伸海外？2018-03-30 "
+description = " VOA主持人：雨舟  嘉宾：夏明 陈破空 秦伟平_中国 “最知名的大亨之一”、安邦保险集团原董事长、总经理吴晓晖，28号在上海市第一中级人民法院受审。这名邓小平家族的前女婿对法庭表示“知罪”，并且请求 “宽大处理”。他被控非法集资和职务侵占。文件显示，安邦保险集团作为私企，资金雄厚，内外通吃。其高调收购的脚步踏遍美国、加拿大、欧洲和韩国等地。它的国内投资对象则包括民生银行和招商银行等等。有分析称，吴晓辉一案“显示政府在如何追究一些个人的责任，而这些人的冒险集资行为导致了国家的债务危机”。那么，十四年前由吴晓晖组建的安邦保险集团，如何得以短时间内聚敛巨额资本并且频频海外得手？吴晓辉是抢到了馅儿饼还是踩进了陷阱？ "
+weight = 20
++++
+
+{{< mymp4 mp4="20180402_cIVKG1E2pzY.info.json.webm.mp4" 
+text="len $(cat 20180402_cIVKG1E2pzY.info_dir/20180402_cIVKG1E2pzY.info.json.webm.mp4|wc -c)"
+>}}
+
+{{< mymp4x  mp4x="20180402_cIVKG1E2pzY.info.json.25k.mp4"
+text="len $(cat 20180402_cIVKG1E2pzY.info_dir/20180402_cIVKG1E2pzY.info.json.25k.mp4|wc -c)"
+>}}
+
+
+{{< mydiv text="VOA主持人：雨舟  嘉宾：夏明 陈破空 秦伟平_中国 “最知名的大亨之一”、安邦保险集团原董事长、总经理吴晓晖，28号在上海市第一中级人民法院受审。这名邓小平家族的前女婿对法庭表示“知罪”，并且请求 “宽大处理”。他被控非法集资和职务侵占。文件显示，安邦保险集团作为私企，资金雄厚，内外通吃。其高调收购的脚步踏遍美国、加拿大、欧洲和韩国等地。它的国内投资对象则包括民生银行和招商银行等等。有分析称，吴晓辉一案“显示政府在如何追究一些个人的责任，而这些人的冒险集资行为导致了国家的债务危机”。那么，十四年前由吴晓晖组建的安邦保险集团，如何得以短时间内聚敛巨额资本并且频频海外得手？吴晓辉是抢到了馅儿饼还是踩进了陷阱？" >}}
+<br>
+
+{{< mydiv text="https://www.youtube.com/watch?v=cIVKG1E2pzY" >}}
+
+
+<br>
+
+请大家传播时，不需要传播文件本身，<br>
+原因是：一旦传播过大东西（例如，图片，文件），<br>
+就会触发检查机制。<br>
+我不知道检查机制的触发条件。<br>
+但是我知道，不会说你传一个没有敏感词的网络地址都检查，<br>
+否则，检查员得累死。<br><br>
+直接转发网址就可以了：<br>
+原因是，这是程序员网站，<br>
+共匪不敢封锁，墙内可以直接下载。
+
+
+EOF3
+
+

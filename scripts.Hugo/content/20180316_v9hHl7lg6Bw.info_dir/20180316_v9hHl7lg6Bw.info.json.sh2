@@ -1,0 +1,54 @@
+#!/bin/bash
+
+rm -f \
+    20180316_v9hHl7lg6Bw.info.json.vo.* \
+    20180316_v9hHl7lg6Bw.info.json.ao.* \
+    20180316_v9hHl7lg6Bw.info.json.bo.* \
+    20180316_v9hHl7lg6Bw.info.json.wav 
+
+rm -fr               20180316_v9hHl7lg6Bw.info_dir
+mkdir -p             20180316_v9hHl7lg6Bw.info_dir
+mv 20180316_v9hHl7lg6Bw.info.json 20180316_v9hHl7lg6Bw.info.json.*         20180316_v9hHl7lg6Bw.info_dir/
+
+
+
+mv  20180316_v9hHl7lg6Bw.info_dir/20180316_v9hHl7lg6Bw.info.json.jpg 20180316_v9hHl7lg6Bw.info_dir/20180316_v9hHl7lg6Bw.info.json.mp4.jpg
+
+cat > 20180316_v9hHl7lg6Bw.info_dir/_index.md << EOF3
++++
+title = " 20180316_v9hHl7lg6Bw 平论Live | 李嘉诚宣布退休，他为何要撤资中国？他的一生到底有多么传奇？2018-03-16 "
+description = " 【激赏平论：https://www.paypal.me/highpointinstitute 本期节目由Hello China你好中国 和 Mattress City梦百合床垫 联合特约播出】 香港亿万富翁李嘉诚周五称，他将在5月份退任长江和记实业有限公司(CK Hutchison Holdings Ltd. ,0001.HK，简称：长和)的主席职务，由此标志着一个时代的结束。李嘉诚麾下的集团企业最初只是一家塑料花生产商，期间受到中国内地经济蓬勃发展的助推，并最终发展成一家全球商业帝国，长和则是其中的旗舰企业。__李嘉诚表示，他的长子亦即公司副主席李泽钜(Victor Li)将接替公司主席职位。李嘉诚将在今年7月年满90岁。_李嘉诚的三个30年，有何不同分水岭？人生曾经遭遇那些重大挑战？他的一生到底有多么传奇？_【 特别公告】_各位读者朋友：_感谢诸位对秦伟平先生作品的关注和支持。_关于如何购买目前已经出版的两本书，统一答复如下：_《中国危机大逃亡》，2017年11月出版，售价99美元，人民币售价680元，ISBN 978-1-940266-85-5._《中国危机路线图》，2016年9月出版，售价9.9美元，人民币售价68元，ISBN 978-1-940266-32-9._购买途径1：全球读者首选 PayPal电子支付_（可在www.paypal.com注册新账户,非常简便，一分钟搞定）     收款账号：weipingqin1980@gmail.com_购买途径2：墙内读者，请发邮件至weipingqin1980@gmail.com咨询非公开的安全收款途径，一般24小时内可收到回复。_（因义工工作时间原因，原所有微信购书渠道暂停使用，望周知）_购买途径3：美国读者，可选择邮寄支票     抬头：WeiPing Qin     地址：PO Box 195, Shady Side, MD 20764, USA_再次感谢大家的支持与海涵，为保护版权及读者安全，严禁以任何形式传播。一般付款后24小时内会收到有作者电子签名的PDF版电子书。     秦伟平     2017年12月28日 "
+weight = 20
++++
+
+{{< mymp4 mp4="20180316_v9hHl7lg6Bw.info.json.mp4" 
+text="len $(cat 20180316_v9hHl7lg6Bw.info_dir/20180316_v9hHl7lg6Bw.info.json.mp4|wc -c)"
+>}}
+
+{{< mymp4x  mp4x="20180316_v9hHl7lg6Bw.info.json.25k.mp4"
+text="len $(cat 20180316_v9hHl7lg6Bw.info_dir/20180316_v9hHl7lg6Bw.info.json.25k.mp4|wc -c)"
+>}}
+
+
+{{< mydiv text="【激赏平论：https://www.paypal.me/highpointinstitute 本期节目由Hello China你好中国 和 Mattress City梦百合床垫 联合特约播出】 香港亿万富翁李嘉诚周五称，他将在5月份退任长江和记实业有限公司(CK Hutchison Holdings Ltd. ,0001.HK，简称：长和)的主席职务，由此标志着一个时代的结束。李嘉诚麾下的集团企业最初只是一家塑料花生产商，期间受到中国内地经济蓬勃发展的助推，并最终发展成一家全球商业帝国，长和则是其中的旗舰企业。__李嘉诚表示，他的长子亦即公司副主席李泽钜(Victor Li)将接替公司主席职位。李嘉诚将在今年7月年满90岁。_李嘉诚的三个30年，有何不同分水岭？人生曾经遭遇那些重大挑战？他的一生到底有多么传奇？_【 特别公告】_各位读者朋友：_感谢诸位对秦伟平先生作品的关注和支持。_关于如何购买目前已经出版的两本书，统一答复如下：_《中国危机大逃亡》，2017年11月出版，售价99美元，人民币售价680元，ISBN 978-1-940266-85-5._《中国危机路线图》，2016年9月出版，售价9.9美元，人民币售价68元，ISBN 978-1-940266-32-9._购买途径1：全球读者首选 PayPal电子支付_（可在www.paypal.com注册新账户,非常简便，一分钟搞定）     收款账号：weipingqin1980@gmail.com_购买途径2：墙内读者，请发邮件至weipingqin1980@gmail.com咨询非公开的安全收款途径，一般24小时内可收到回复。_（因义工工作时间原因，原所有微信购书渠道暂停使用，望周知）_购买途径3：美国读者，可选择邮寄支票     抬头：WeiPing Qin     地址：PO Box 195, Shady Side, MD 20764, USA_再次感谢大家的支持与海涵，为保护版权及读者安全，严禁以任何形式传播。一般付款后24小时内会收到有作者电子签名的PDF版电子书。     秦伟平     2017年12月28日" >}}
+<br>
+
+{{< mydiv text="https://www.youtube.com/watch?v=v9hHl7lg6Bw" >}}
+
+
+<br>
+
+请大家传播时，不需要传播文件本身，<br>
+原因是：一旦传播过大东西（例如，图片，文件），<br>
+就会触发检查机制。<br>
+我不知道检查机制的触发条件。<br>
+但是我知道，不会说你传一个没有敏感词的网络地址都检查，<br>
+否则，检查员得累死。<br><br>
+直接转发网址就可以了：<br>
+原因是，这是程序员网站，<br>
+共匪不敢封锁，墙内可以直接下载。
+
+
+EOF3
+
+
